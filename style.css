@@ -1,0 +1,202 @@
+body{
+    background: linear-gradient(to right , #9198e5, #e66);
+    
+}
+.main{
+    margin: 8% auto;
+    height: 600px;
+    width: 600px;
+}
+.body{
+    position: relative;
+    margin: auto;
+    height: 600px;
+    width: 400px;
+}
+.heaing{
+    position: absolute;
+    margin:15% 25%;
+}
+.head{
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+    border-radius: 50% 50% 0 0;
+}
+.eyes{
+    display: flex;
+    height: 145%;
+    justify-content: space-around;
+    align-items: center;
+}
+.left, .right{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.root{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    margin: 55.5% 15.5%;
+}
+.lefthd,.righthd{
+    margin-bottom: 25% ;
+    height: 95px;
+    width: 28px;
+    background-color: chartreuse;
+    border-radius: 50px;
+}
+.st{
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+    margin: 0 5px;
+    border-radius: 0 0 80px 80px;
+
+}
+.legs{
+    display: flex;
+    padding-left: 7.6rem;
+    padding-top: 4rem;
+}
+.legs div{
+    margin-top: 96% ;
+    height: 100px;
+    width: 28px;
+    background-color: chartreuse;
+    border-radius: 50px
+}
+.legs div:nth-child(1){
+    margin-right: 2.5rem;
+}
+
+.main:hover .lefthd{
+    animation: lefthand   2s infinite;
+}
+.main:hover .righthd{
+    animation: righthand   2s infinite;
+}
+.main:hover .legs div:nth-child(1){
+    animation: leftleg   2s infinite;
+}
+.main:hover .legs div:nth-child(2){
+    animation: rightleg   2s infinite;
+}
+.main:hover .head{
+    animation: head   2s infinite;
+}
+.main:hover .st{
+    animation: head   2s infinite;
+}
+
+@keyframes head {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+    25%{
+        transform: rotate(20deg);
+        transform-origin: bottom;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes lefthand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(120deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-120deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes righthand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(120deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-120deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rightleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(70deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+@keyframes leftleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    75%{
+        transform: rotate(-70deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+/* .main:hover .legs div:nth-child(1){
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s ease;
+}
+.main:hover .legs div:nth-child(2){
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s ease-out;
+} */
